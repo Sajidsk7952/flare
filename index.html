@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLARE | online shoe store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bffccae6c8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <script src="shoe.js" defer></script>
+</head>
+
+<body>
+    <navbar class="navigation">
+        <div class="logo"><a href="./index.html"><img src="./flare.png" alt="logo" class="icon"></a></div>
+        <ul class="nav">
+            <li class="nav_item"><a href="#home" class="home navlinks">home</a></li>
+            <li class="nav_item"><a href="#categories" class="cate navlinks" onclick="scrolld()">categories</a></li>
+            <li class="nav_item"><a href="#about" class="customize navlinks">about</a></li>
+            <li class="nav_item"><a href="#signup" class="sale navlinks">signUp</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" name="findnav" id="findnav" placeholder="find your items">
+            <button class="find">Find</button>
+        </div>
+        <div class="cart">
+            <a href="#" class="cartlink"><img src="./cart.png" alt="cart icon" class="cartimg"></a>
+            <span class="cartitems">0</span>
+        </div>
+    </navbar>
+    <section class="shoedisplay" id="home">
+        <div class="mainshoe">
+            <div class="sneakers shoecard">
+                <img src="./sneakers.png" alt="" class="shoeimg">
+                <!-- <div class="imgshadow">hi</div> -->
+                <div class="shoedetails">
+                    <h4 class="shoehead">sneakers</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-duotone fa-star"></i>
+                    </div>
+                    <span class="shoetext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt blanditiis
+                        non
+                        nulla accusamusexpedita! Vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Alias
+                        ex earum, ratione dolorum deserunt iusto?</span>
+                    <h3>starts from- <i class="fas fa-rupee-sign"></i><span> </span><span class="price">4,999</span>
+                    </h3>
+                    <button class="buynow buybut1">buynow</button>
+                    <div class="social">
+                        <h3>follow us on</h3>
+                        <button><a href="https://www.facebook.com/profile.php?id=100040379836782" target="_blank">
+                                <i class="fa-brands fa-facebook"></i></a></button>
+                        <button><i class="fa-brands fa-instagram"></i></button>
+                        <button><i class="fa-brands fa-twitter"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="casuals shoecard">
+                <img src="./casuals.png" alt="" class="shoeimg">
+                <div class="shoedetails">
+                    <h4 class="shoehead">casual shoes</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-duotone fa-star"></i>
+                        <i class="fa-duotone fa-star"></i>
+                    </div>
+                    <span class="shoetext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt blanditiis
+                        non
+                        nulla accusamusexpedita! Vitae. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Sequi
+                        laboriosam corrupti impedit eius molestiae soluta.</span>
+                    <h3>starts from- <i class="fas fa-rupee-sign"></i><span> </span><span class="price">3,999</span>
+                    </h3>
+                    <button class="buynow buybut2">buynow</button>
+                    <div class="social">
+                        <h3>follow us on</h3>
+                        <button><a href="https://www.facebook.com/profile.php?id=100040379836782" target="_blank">
+                                <i class="fa-brands fa-facebook"></i></a></button>
+                        <button><i class="fa-brands fa-instagram"></i></button>
+                        <button><i class="fa-brands fa-twitter"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="formals shoecard">
+                <img src="./formals.png" alt="" class="shoeimg">
+                <div class="shoedetails">
+                    <h4 class="shoehead">formals shoes</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-duotone fa-star"></i>
+                        <i class="fa-duotone fa-star"></i>
+                    </div>
+                    <span class="shoetext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt blanditiis
+                        non
+                        nulla accusamusexpedita! Vitae. Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.necessitatibus natus odit eos est nostrum.</span>
+                    <h3>starts from- <i class="fas fa-rupee-sign"></i><span> </span><span class="price">3,999</span>
+                    </h3>
+                    <button class="buynow buybut3">buynow</button>
+                    <div class="social">
+                        <h3>follow us on</h3>
+                        <button><a href="https://www.facebook.com/profile.php?id=100040379836782" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a></button>
+                        <button><i class="fa-brands fa-instagram"></i></button>
+                        <button><i class="fa-brands fa-twitter"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="hunting shoecard">
+                <img src="./hunting.png" alt="" class="shoeimg">
+                <div class="shoedetails">
+                    <h4 class="shoehead">hunting shoes</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-duotone fa-star"></i>
+                        <i class="fa-duotone fa-star"></i>
+                    </div>
+                    <span class="shoetext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt blanditiis
+                        non
+                        nulla accusamusexpedita! Vitae. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Omnis
+                        laudantium tempora velit vitae reiciendis dolor!</span>
+                    <h3>starts from- <i class="fas fa-rupee-sign"></i><span> </span><span class="price">7,999</span>
+                    </h3>
+                    <button class="buynow buybut4">buynow</button>
+                    <div class="social">
+                        <h3>follow us on</h3>
+                        <button><a href="https://www.facebook.com/profile.php?id=100040379836782" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a></button>
+                        <button><i class="fa-brands fa-instagram"></i></button>
+                        <button><i class="fa-brands fa-twitter"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slidebtns">
+            <div class="slidebtn"><button class="prev" onclick="scrolll()"><i
+                        class="fa-solid fa-less-than"></i></button></div>
+            <div class="slidebtn"><button class="next" onclick="scrollr()"><i
+                        class="fa-solid fa-greater-than"></i></button></div>
+        </div>
+    </section>
+    <section class="customise" id="categories">
+        <div class="cust">
+            <h1 class="custhead">shop by categories</h1>
+            <div class="custimgs row1">
+                <div class="men pict">
+                    <div class="custtext">
+                        <h3>shoes for men</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nesciunt! Assumenda,
+                            nesciunt!Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        <button class="shopnow">shop now</button>
+                    </div>
+                </div>
+                <div class="women pict">
+                    <div class="custtext">
+                        <h3>shoes for women</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nesciunt! Assumenda,
+                            nesciunt!Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        <button class="shopnow">shop now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="custimgs row2">
+                <div class="heels pict">
+                    <div class="custtext">
+                        <h3>heels</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nesciunt! Assumenda,
+                            nesciunt!Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        <button class="shopnow">shop now</button>
+                    </div>
+                </div>
+                <div class="sandels pict">
+                    <div class="custtext">
+                        <h3>sandels</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nesciunt! Assumenda,
+                            nesciunt!Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        <button class="shopnow">shop now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="custimgs row3">
+                <div class="bootsmen pict">
+                    <div class="custtext">
+                        <h3>boots for men</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nesciunt! Assumenda,
+                            nesciunt!Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        <button class="shopnow">shop now</button>
+                    </div>
+                </div>
+                <div class="bootswomen pict">
+                    <div class="custtext">
+                        <h3>boots for women</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nesciunt! Assumenda,
+                            nesciunt!Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        <button class="shopnow">shop now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h1 class="about_head">about FLARE</h1>
+        <div class="images">
+            <img src="" id="aboutimgs" class="random1">
+            <img src="" id="aboutimgs" class="random2">
+            <img src="" id="aboutimgs" class="random3">
+        </div>
+        <div class="about_info">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, illum? Sint eius esse enim sunt qui, quae
+            eligendi obcaecati, recusandae saepe atque est dolores quo veritatis laborum odit. Consequatur pariatur sed
+            omnis ea quae sunt facere iusto nulla. Culpa magnam facere repellat corporis omnis temporibus qui modi sunt
+            nihil sapiente quis iusto praesentium perferendis iure deleniti unde architecto, porro veritatis quas
+            tenetur error in harum! Voluptate rem magni ullam beatae nobis quidem! Necessitatibus saepe ducimus illo?
+            Officia atque sequi voluptas aliquam magnam praesentium libero quod, dicta ducimus, sed mollitia possimus
+            aut necessitatibus corporis facere ipsum itaque obcaecati fugiat dolorum vel id, aliquid delectus. Eum quas
+            nesciunt harum culpa natus! Iste consectetur voluptas ea, minus numquam sed consequuntur unde nam officiis
+            quasi repellendus et ducimus enim cumque fugiat, corporis, sit laudantium dignissimos eligendi. Corrupti
+            similique sint esse possimus perspiciatis quo necessitatibus? Fugit fuga excepturi saepe amet ea neque
+            voluptatibus libero pariatur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, at nihil!
+            Quo reprehenderit soluta alias autem nobis placeat illum in pariatur amet libero unde mollitia sequi,
+            consequuntur perferendis a vero aliquid iure dolor, expedita est assumenda saepe iste architecto. Dolorem
+            beatae ducimus nihil eum molestias a nemo tempore quia error debitis eveniet, atque, adipisci nesciunt ipsam
+            in odio ab modi dolore! Excepturi velit corrupti unde molestiae iste ducimus? Earum voluptatum ratione
+            quibusdam. Modi vel nemo culpa fugit maiores numquam earum ad assumenda, tempore voluptatem ipsa molestiae
+            tenetur minus debitis quod temporibus commodi magnam similique pariatur facere labore eligendi quam.
+            Explicabo.
+        </div>
+    </section>
+    <section class="signupform" id="signup">
+        <h2 class="formhead">create an account</h2>
+        <form action="">
+            <div class="name formelement">
+                <p>enter your name</p>
+                <input type="text" name="name" id="name" placeholder="enter your full name">
+            </div>
+            <div class="dob formelement">
+                <p>enter your date of birth</p>
+                <input type="date" name="dob" id="dob" placeholder="DD/MM/YYYY">
+            </div>
+            <div class="email formelement">
+                <p>enter your email</p>
+                <input type="email" name="email" id="email" placeholder="yourgmail@gmail.com">
+            </div>
+            <div class="password formelement">
+                <p>create your password</p>
+                <input type="password" name="password" id="password" placeholder="enter a strong password">
+            </div>
+            <div class="conpassword formelement">
+                <p>confirm your password</p>
+                <input type="password" name="conpassword" id="conpassword" placeholder="confirm your password">
+            </div>
+        </form>
+        <div class="formend">
+            <a href="#" class="login">already have a account?</a>
+            <button class="sign">sign Up</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footerlogo">
+            
+        </div>
+    </footer>
+</body>
+</html>
